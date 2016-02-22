@@ -1,0 +1,22 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+}
+
+.thColoredBlueDark{
+  background-color: #66afe9;
+  padding: 10px;
+}
+
+.thColoredBlueLight{
+  background-color: #428bca;
+}
+
+.modal-header-color{
+  background-color: #d43f3a;
+}
+
+.colorTitle{
+  color: #333333;
+}

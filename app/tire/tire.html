@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <h1 ng-bind="tireTitle"></h1>
+        <hr>
+        <div class="col-lg-3">
+            <h4>Выбрать по цене:</h4>
+            <ul ng-repeat="item in price track by $index">
+                <a ng-click="DataFilter(item)"><p ng-bind="item.title"></p></a>
+            </ul>
+            <hr>
+            <h4>Топ 15 производителей:</h4>
+            <ul ng-repeat="item in topBrend track by $index">
+                <p ng-bind="item"></p>
+            </ul>
+        </div>
+        <div class="col-lg-9">
+            <div class="col-sm-6 col-md-4"  ng-repeat="tire in tires | filterTires:dataFilter">
+                <div class="thumbnail">
+                    <img src="images/tire/{{::tire.image}}">
+                    <div class="caption">
+                        <h4 ng-bind="tire.title"></h4>
+                        <p>От {{::tire.price}} грн./шт</p>
+                        <p>
+                            <a href="#/tire/{{::tire.id}}" role="button">подробнее</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

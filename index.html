@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Сars Market</title>
+        <link rel="stylesheet" href="style/app.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+
+    <body class="container">
+        <div header-top></div>
+        <div slider-top-header></div>
+        <hr>
+
+        <ng-view></ng-view>
+
+        <div footer-custom-bottom></div>
+
+
+
+        <script src='bower_components/angular/angular.js'></script>
+        <script src='bower_components/angular-route/angular-route.js'></script>
+        <script src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
+        <script src='bower_components/bootstrap/js/carousel.js'></script>
+
+
+        <script src='app/main.js'></script>
+        <script src='app/header/header-top.js'></script>
+        <script src='app/slider/slider-top-header.js'></script>
+        <script src='app/footer/footer-custom-bottom.js'></script>
+        <script src='app/tire/ControllerTire.js'></script>
+        <script src='app/tire/ControllerTireDetails.js'></script>
+        <script src='app/tire/serviceTire.js'></script>
+
+    </body>
+
+</html>
